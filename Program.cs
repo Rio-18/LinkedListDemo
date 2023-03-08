@@ -1,6 +1,6 @@
 ﻿namespace LinkedListDemo
 {
-    class Program
+     class Program
     {
         static void Main(string[] args)
         {
@@ -9,7 +9,9 @@
             while (flag)
             {
                 Console.WriteLine("Enter Option");
-                Console.WriteLine("1:Create linked list\n2: Display ");
+                Console.WriteLine("1:Create linked list");
+                Console.WriteLine("2:Display");
+                Console.WriteLine("3:ReverseContact");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -21,8 +23,13 @@
                     case 2:
                         linkedList.Display();
                         break;
+                    case 3:
+                        linkedList.InReverse(56);
+                        linkedList.InReverse(30);
+                        linkedList.InReverse(70);
+                        break;
                     default:
-                        Console.WriteLine("Enter Correct Option");
+                        Console.WriteLine("Enter correct option");
                         break;
                 }
             }
